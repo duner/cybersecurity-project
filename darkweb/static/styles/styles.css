@@ -1,0 +1,200 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif; 
+}
+
+.sans-serif { font-family: 'Roboto', Helvetica, Arial, sans-serif; }
+.monospace { font-family: 'Roboto Mono', Monaco, monospace; }
+
+h1,
+h3 {
+    font-family: 'Roboto Mono', Monaco, monospace;
+}
+
+p {
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+a {
+    color: #4B2FB0;
+}
+
+article,
+header,
+section,
+footer {
+    margin: 0 auto;
+}
+
+q {
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
+    font-family: 'Roboto Mono', Monaco, monospace;
+    font-weight: 700;
+    display: block;
+    font-size: 1.25em;
+
+}
+
+.masthead {
+  background-color: #eee;
+  padding: .5em 0 .375em;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 3em;
+}
+
+.masthead p {
+    margin: 0;
+    margin-left: .5em;
+    font-family: 'Roboto Mono', Monaco, monospace;
+    font-weight: 800;
+    font-size: .75em;
+}
+
+.masthead a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+h1 {
+    margin-bottom: 0.25em;
+}
+
+h2 {
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    max-width: 600px;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+header p {
+    font-size: .875em;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+
+.onion {
+    margin-bottom: 2em;
+}
+
+.prompt {
+    text-align: center;
+    font-family: 'Roboto Mono', Monaco, monospace;
+}
+
+.prompt p {
+    margin: 0;
+    font-weight: 500;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.onion:not(.active) .prompt p {
+    border-bottom: 1px solid #aaa;
+}
+
+
+.prompt p a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.prompt p:hover {
+    text-decoration: none;
+    cursor: pointer;
+    color: #aaa;
+}
+
+.instructions {
+    font-size: .875em;
+    padding: .5em 0em;
+    background-color: #eee;
+    box-shadow: -5px 0 0  #eee, 5px 0 0  #eee;
+}
+
+.instructions p {
+    margin: .75em .5em;
+    font-weight: 300;
+    font-family: 'Roboto', Helvetica, Arial, sans-serif; 
+}
+
+.onion:not(.active) .instructions {
+    display: none;
+}
+
+article,
+.onion {
+    max-width: 600px;
+}
+
+footer {
+    margin-top: 5em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    background-color: #eee;
+}
+
+.bios p {
+    margin: 0 auto 1em;
+    max-width: 600px;
+    font-family: 'Roboto Mono', Monaco, monospace;
+    font-size: .75em;
+}
+
+.bios a {
+    color: black;
+    font-weight: 700;
+}
+
+.meta {
+    margin-top: 4em;
+    margin-bottom: 0;
+    font-family: 'Roboto Mono', Monaco, monospace;
+    text-align: center;
+    font-size: .625em;
+}
+
+@media screen and (min-width: 850px) {
+    q {
+        width: 275px;
+    } 
+
+    q.right {
+        float: right;
+        margin-right: -100px;
+        margin-left: 50px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    article,
+    header,
+    section,
+    footer {
+        padding-left: .75em;
+        padding-right: .75em;
+    }
+
+    .prompt {
+        text-align: left;
+    }
+
+    .onion:not(.active) .prompt p {
+        border-bottom: none;
+        text-decoration: underline;
+    }
+    .onion.active .prompt {
+        margin-bottom: .75em;
+    }
+ 
+}

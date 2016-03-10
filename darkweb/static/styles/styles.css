@@ -144,6 +144,13 @@ footer {
     background-color: #eee;
 }
 
+video {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 100%    !important;
+    height: auto   !important;
+}
+
 .bios p {
     margin: 0 auto 1em;
     max-width: 600px;
